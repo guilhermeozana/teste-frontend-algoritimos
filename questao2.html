@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Questão 2</title>
+    <meta charset="utf-8">
+  </head>
+  <script>
+
+    let numeros = [2,3,55,66];
+    let val1 = 8;
+    let val2 = 2;
+
+      const operacao = {
+          somar(dados){
+            let total = 0;
+            for(let i = 0; i < dados.length; i++){
+                total += dados[i];
+            }
+            return total;
+          },
+
+          diminuir(dados){
+            let total = dados[0];
+            for(let i = 0; i < dados.length; i++){ 
+                total -= dados[i];
+            }
+            total += dados[0];
+            return total;
+          },
+
+          multiplicar(dados){
+            let total = 1;
+            for(let i = 0; i < dados.length; i++){
+                total *= dados[i];
+            }
+            return total;
+          },
+
+          dividir(val1, val2){
+            if(val1 == 0){
+                console.log("digite um valor maior que 0");
+                return false;
+            }else{
+                return val1/val2;
+            }
+          }
+      }
+
+      console.log(operacao.somar(numeros));
+      console.log(operacao.diminuir(numeros));
+      console.log(operacao.multiplicar(numeros));
+      console.log(operacao.dividir(val1,val2));
+
+      
+
+
+  </script>
+  <body>
+    
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Questão 3</title>
+    <meta charset="utf-8">
+  </head>
+  <script>
+
+    function gerarId(){
+        let alphanum1 = Math.random()
+                .toString(36)
+                .substr(-4)
+                .toUpperCase();
+        let alphanum2 = Math.random()
+                .toString(36)
+                .substr(-4)
+                .toUpperCase();
+        let alphanum3 = Math.random()
+                .toString(36)
+                .substr(-4)
+                .toUpperCase();
+        let alphanum4 = Math.random()
+                .toString(36)
+                .substr(-4)
+                .toUpperCase();
+        
+        return alphanum1+"-"+alphanum2+"-"+alphanum3+"-"+alphanum4;
+        
+    }
+
+      let id = gerarId();
+
+      console.log(id);
+
+  </script>
+  <body> 
+  </body>
+</html>
